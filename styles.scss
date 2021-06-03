@@ -14,16 +14,59 @@
 //   outline: solid #f00 1px !important;
 // }
 
-// Media queries
-@media screen and (min-width: 640px) {
-}
-@media screen and (min-width: 768px) {
-}
-@media screen and (min-width: 1024px) {
-}
-@media screen and (min-width: 1280px) {
-}
-@media screen and (min-width: 1536px) {
+// Media query
+@media screen and (min-width: 375px) {
 }
 
+body {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
 
+// Color variables
+$cyan: hsl(180, 66%, 49%);
+$dark-violet: hsl(257, 27%, 26%);
+$red: hsl(0, 87%, 67%);
+$gray: hsl(0, 0%, 75%);
+$gray-violet: hsl(257, 7%, 63%);
+$dark-blue: hsl(255, 11%, 22%);
+$dark-violet: hsl(260, 8%, 14%);
+
+// Header
+header {
+  width: 100%;
+  height: 7.5rem;
+  padding: 2.5rem 0;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .logo {
+    height: 3rem;
+    margin-right: 1rem;
+  }
+
+  ul {
+    display: flex;
+    li {
+      padding: 0 1rem;
+      :hover {
+        color: $dark-violet;
+      }
+    }
+    a {
+      color: $gray-violet;
+    }
+  }
+}
+
+.nav-button a {
+  padding: 0.5rem 1.5rem;
+  background-color: $cyan;
+  color: white;
+  border-radius: 50px;
+}
