@@ -15,8 +15,8 @@
 // }
 
 // Media query
-@media screen and (min-width: 375px) {
-}
+// @media screen and (min-width: 375px) {
+// }
 
 body {
   font-size: 18px;
@@ -30,13 +30,13 @@ $red: hsl(0, 87%, 67%);
 $gray: hsl(0, 0%, 75%);
 $gray-violet: hsl(257, 7%, 63%);
 $dark-blue: hsl(255, 11%, 22%);
-$dark-violet: hsl(260, 8%, 14%);
+$very-dark-violet: hsl(260, 8%, 14%);
 
 // Header
 header {
   width: 100%;
-  height: 7.5rem;
-  padding: 2.5rem 0;
+  height: 6rem;
+  padding: 2rem 0;
   position: relative;
 }
 
@@ -52,21 +52,76 @@ nav {
 
   ul {
     display: flex;
+
     li {
       padding: 0 1rem;
+      font-size: 1.2rem;
+      font-weight: 700;
       :hover {
         color: $dark-violet;
+        transition: 0.25s;
       }
-    }
-    a {
-      color: $gray-violet;
+      .sign-up {
+        color: white;
+      }
+
+      a {
+        color: $gray-violet;
+      }
     }
   }
 }
 
-.nav-button a {
+.btn a {
   padding: 0.5rem 1.5rem;
   background-color: $cyan;
   color: white;
   border-radius: 50px;
+  transition: 0.25s;
+}
+.btn a:hover {
+  opacity: 0.8;
+}
+
+// Intro
+.intro {
+  padding: 5rem 0rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro-text {
+  margin-left: 5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  h1 {
+    margin-bottom: 0.75rem;
+    color: $dark-violet;
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  p {
+    margin-bottom: 2rem;
+    color: $gray-violet;
+  }
+  .btn-large {
+    padding: 0.5rem;
+    background-color: $cyan;
+    color: white;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}
+
+.intro-img {
+  padding-left: 7rem;
+
+  img {
+    margin-left: 15%;
+  }
 }
