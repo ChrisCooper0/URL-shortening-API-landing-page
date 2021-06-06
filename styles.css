@@ -185,12 +185,13 @@ form {
 
 .statistics {
   background-color: whitesmoke;
-  padding: 10rem;
+  padding: 10rem 9rem;
   text-align: center;
 }
 
 .statistics .links {
   padding-bottom: 4rem;
+  margin-top: -4rem;
 }
 
 .statistics .links .link-container {
@@ -208,11 +209,13 @@ form {
           align-items: center;
   padding: 1.75rem 1rem;
   border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .statistics .links .urls {
   color: #9e9aa7;
   margin-left: 2rem;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,7 +227,22 @@ form {
   font-size: 1rem;
 }
 
+.statistics .links .urls .long-url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .statistics .links .urls .short-url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   color: #2acfcf;
 }
 

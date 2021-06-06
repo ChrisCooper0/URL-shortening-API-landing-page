@@ -174,11 +174,12 @@ form {
 // Statistics section
 .statistics {
   background-color: whitesmoke;
-  padding: 10rem;
+  padding: 10rem 9rem;
   text-align: center;
 
   .links {
     padding-bottom: 4rem;
+    margin-top: -4rem;
 
     .link-container {
       background-color: white;
@@ -189,20 +190,26 @@ form {
       align-items: center;
       padding: 1.75rem 1rem;
       border-radius: 0.5rem;
+      margin-bottom: 1rem;
     }
 
     .urls {
       color: $gray-violet;
       margin-left: 2rem;
+      width: 80%;
       display: flex;
       justify-content: space-between;
       align-self: center;
       font-size: 1rem;
 
       .long-url {
+        display: flex;
+        justify-content: flex-start;
       }
 
       .short-url {
+        display: flex;
+        justify-content: flex-end;
         color: $cyan;
       }
     }
@@ -224,7 +231,7 @@ form {
       }
     }
     .copied {
-      background-color: $violet !important;
+      background-color: $dark-violet !important;
       color: white;
     }
   }

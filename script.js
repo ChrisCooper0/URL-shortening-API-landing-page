@@ -2,11 +2,15 @@
 const shorten = () => {
   const shortenBtn = document.getElementById("shorten-btn");
 
-  // Red border and add text if no input
+  // Inputted text
 
-  // Validate URL
+  // Red border and add error message below if no input
 
-  // Sent to API
+  // Validate URL (Regex)
+
+  // Send to API via Fetch
+
+  // Await response
 
   // Update UI with response
 };
@@ -19,4 +23,7 @@ const clicked = () => {
 
   copyBtn.classList.add("copied");
   copyBtn.innerText = "Copied!";
+
+  // Remove copied when clicking on another option
+  // Add functionality so only the button clicked is changed
 };
