@@ -5,6 +5,7 @@
   list-style-type: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -116,12 +117,23 @@ nav ul li a {
 }
 
 .intro-text .btn-large {
-  padding: 0.5rem;
-  background-color: #2acfcf;
-  color: white;
-  border-radius: 50px;
   font-size: 1.2rem;
   font-weight: 700;
+  padding: 0.75rem 2rem;
+  background-color: #2acfcf;
+  border-radius: 50px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  outline: none;
+  border: none;
+}
+
+.intro-text .btn-large:hover {
+  opacity: 0.8;
+}
+
+.intro-text .btn-large a {
+  color: white;
 }
 
 .intro-img {
@@ -194,16 +206,20 @@ form {
 .boost button {
   padding: 1rem 3rem;
   background-color: #2acfcf;
-  color: white;
   border-radius: 50px;
   font-size: 1.25rem;
   font-weight: 700;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  cursor: pointer;
 }
 
 .boost button:hover {
   opacity: 0.8;
+}
+
+.boost button a {
+  color: white;
 }
 
 footer {
