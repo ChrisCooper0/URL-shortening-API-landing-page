@@ -137,7 +137,6 @@ nav {
 }
 
 // Input section
-
 form {
   background-color: $dark-violet;
   width: 80%;
@@ -173,7 +172,6 @@ form {
 }
 
 // Statistics section
-
 .statistics {
   background-color: whitesmoke;
   padding: 10rem;
@@ -191,16 +189,52 @@ form {
   }
 }
 
-hr {
+.card-line {
   width: 80%;
   margin: 0 auto;
   height: 10px;
   background-color: $cyan;
   border: none;
+  z-index: -1;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .card {
+    background-color: white;
+    margin-left: 10px;
+    padding: 2rem;
+    position: relative;
+
+    img {
+      background: $dark-violet;
+      padding: 1rem;
+      border-radius: 50%;
+      position: absolute;
+      top: -2rem;
+      left: 2rem;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: $dark-violet;
+      margin: 3rem 0.5rem 0 0;
+    }
+
+    p {
+      color: $gray;
+      text-align: left;
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+  }
 }
 
 // Boost section
-
 .boost {
   background-color: $dark-violet;
   background-image: url("./images/bg-boost-desktop.svg");
@@ -233,7 +267,6 @@ hr {
 }
 
 // Footer
-
 footer {
   width: 100%;
   height: 10%;

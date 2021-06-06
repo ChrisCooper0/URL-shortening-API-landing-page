@@ -201,12 +201,55 @@ form {
   padding-bottom: 10rem;
 }
 
-hr {
+.card-line {
   width: 80%;
   margin: 0 auto;
   height: 10px;
   background-color: #2acfcf;
   border: none;
+  z-index: -1;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.cards .card {
+  background-color: white;
+  margin-left: 10px;
+  padding: 2rem;
+  position: relative;
+}
+
+.cards .card img {
+  background: #3b3054;
+  padding: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -2rem;
+  left: 2rem;
+}
+
+.cards .card .card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #3b3054;
+  margin: 3rem 0.5rem 0 0;
+}
+
+.cards .card p {
+  color: #bfbfbf;
+  text-align: left;
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 
 .boost {
