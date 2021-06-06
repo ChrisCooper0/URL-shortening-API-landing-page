@@ -189,6 +189,68 @@ form {
   text-align: center;
 }
 
+.statistics .links {
+  padding-bottom: 4rem;
+}
+
+.statistics .links .link-container {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.75rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.statistics .links .urls {
+  color: #9e9aa7;
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1rem;
+}
+
+.statistics .links .urls .short-url {
+  color: #2acfcf;
+}
+
+.statistics .links .copy-btn {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  border: transparent;
+  cursor: pointer;
+  background-color: #2acfcf;
+}
+
+.statistics .links .copy-btn:hover {
+  opacity: 0.8;
+}
+
+.statistics .links .copy-btn a {
+  color: white;
+}
+
+.statistics .links .copied {
+  background-color: #3b3054 !important;
+  color: white;
+}
+
 .statistics h2 {
   color: #3b3054;
   font-size: 2.5rem;
@@ -262,13 +324,13 @@ form {
   font-size: 1.2rem;
   font-weight: 700;
   color: #3b3054;
-  margin: 3rem 0.5rem 0 0;
+  margin-top: 2rem;
 }
 
 .cards .card p {
   color: #bfbfbf;
   text-align: left;
-  margin-top: 1rem;
+  margin: 1rem 0.25rem;
   font-size: 1rem;
 }
 
@@ -281,7 +343,7 @@ form {
 }
 
 .boost p {
-  font-size: 3rem;
+  font-size: 2.75rem;
   font-weight: 700;
   color: white;
   padding-bottom: 2rem;

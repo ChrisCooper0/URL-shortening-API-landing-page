@@ -59,14 +59,29 @@
       <div id="input" class="container">
         <div class="input-box">
           <form action="">
-            <input type="text" placeholder="Shorten a link here..." />
-            <button>Shorten It!</button>
+            <input
+              type="text"
+              id="input"
+              placeholder="Shorten a link here..."
+            />
+            <button id="shorten-btn" onclick="shorten()">Shorten It!</button>
           </form>
         </div>
       </div>
     </section>
 
     <section class="statistics">
+      <div class="links">
+        <div class="link-container">
+          <div class="urls">
+            <p class="long-url">Long URL</p>
+            <p class="short-url" id="copy-url">Short URL</p>
+          </div>
+          <button class="copy-btn" id="copy-btn" onclick="clicked()">
+            <a href="#">Copy</a>
+          </button>
+        </div>
+      </div>
       <h2>Advanced Statistics</h2>
       <p class="statistics-text">
         Track how your links are performing across the web with <br />
