@@ -18,7 +18,6 @@ header {
   width: 100%;
   height: 6rem;
   padding: 2rem;
-  position: relative;
 }
 
 nav {
@@ -35,6 +34,7 @@ nav {
 nav .logo {
   height: 3rem;
   margin-right: -12rem;
+  margin-top: -1.5rem;
 }
 
 nav ul {
@@ -87,7 +87,7 @@ nav ul li a {
 }
 
 .intro-text {
-  margin-left: 5rem;
+  margin-left: 4rem;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,6 +186,27 @@ form {
 .statistics {
   background-color: whitesmoke;
   padding: 10rem;
+  text-align: center;
+}
+
+.statistics h2 {
+  color: #3b3054;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  padding-bottom: 1rem;
+}
+
+.statistics .statistics-text {
+  color: #9e9aa7;
+  padding-bottom: 10rem;
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+  height: 10px;
+  background-color: #2acfcf;
+  border: none;
 }
 
 .boost {
@@ -226,10 +247,26 @@ footer {
   width: 100%;
   height: 10%;
   background-color: #35323e;
+  padding: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 li:first-child {
   color: white;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
 li:first-child:hover {
@@ -239,10 +276,24 @@ li:first-child:hover {
 
 li {
   color: #bfbfbf;
+  margin-bottom: 0.75rem;
+  font-weight: 500;
 }
 
 li:hover {
   color: #2acfcf;
+  cursor: pointer;
+}
+
+.logo-white {
+  height: 2.5rem;
+}
+
+.social-icons img {
+  margin-left: 20px;
+}
+
+.social-icons img:hover {
   cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
